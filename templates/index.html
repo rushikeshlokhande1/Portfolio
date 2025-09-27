@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="hero" class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hi, my name is <span class="highlight">Rushikesh Lokhande</span><br>
+                and I am a <span id="dynamic-text"></span>
+            </h1>
+            <p class="hero-subtitle">Building data-driven solutions and interactive applications</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="mailto:rushilokhande4655@gmail.com" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="particles"></div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am Rushikesh Lokhande, a Computer Science Engineering student graduating in April 2025 with hands-on experience in Data Science and Machine Learning. Skilled in Python, SQL, Power BI, Cloud Computing, LLMs, and AI tools, I enjoy building data-driven solutions. With a strong foundation in analytics and problem-solving, I aim to turn complex data into actionable insights and innovative products.</p>
+                <div class="skills">
+                    <div class="skill">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Power BI</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Machine Learning</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">LLMs & AI Tools</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Excel</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">All</button>
+            <button class="tab-btn" data-filter="vibe">Vibe Coding</button>
+            <button class="tab-btn" data-filter="data">Data Science</button>
+            <button class="tab-btn" data-filter="ml">Machine Learning</button>
+            <button class="tab-btn" data-filter="excel">Excel</button>
+            <button class="tab-btn" data-filter="powerbi">Power BI</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="vibe">
+                <h3>InnovateHive</h3>
+                <p>A platform showcasing innovative projects and solutions, designed with a modern UI for startups and developers.</p>
+                <a href="https://www.innovatehive.in/" class="project-link" target="_blank">Visit Website</a>
+            </div>
+            <div class="project-card" data-category="vibe">
+                <h3>Khavane Kayaks</h3>
+                <p>A booking and information website for Khavane Kayaks, enabling customers to explore services and connect easily.</p>
+                <a href="https://www.khavanekayaks.com/" class="project-link" target="_blank">Visit Website</a>
+            </div>
+            <div class="project-card" data-category="vibe">
+                <h3>Dr. Prajakta Kadam Naigude</h3>
+                <p>A professional clinic website built for patient engagement, service details, and appointment management.</p>
+                <a href="https://drprajaktakadamnaigude.com/" class="project-link" target="_blank">Visit Website</a>
+            </div>
+            <div class="project-card" data-category="vibe">
+                <h3>Kobo Lit</h3>
+                <p>A web app for book lovers to share, explore, and discover literature with a clean and interactive interface.</p>
+                <a href="https://kobo-lit-rushikeshlokha1.replit.app" class="project-link" target="_blank">Visit App</a>
+            </div>
+            <div class="project-card" data-category="vibe">
+                <h3>Bhaum</h3>
+                <p>A digital solution to access and manage government land records and legal papers efficiently.</p>
+                <a href="https://bhaum.in" class="project-link" target="_blank">Visit Platform</a>
+            </div>
+            <div class="project-card" data-category="data">
+                <h3>Chat with PDF Chatbot</h3>
+                <p>Interactive chatbot that allows users to upload PDFs and ask questions. Provides context-aware answers using Python, LangGraph, and Streamlit.</p>
+                <a href="https://pdf-chatbot-3-ewi3.onrender.com/" class="project-link" target="_blank">Try Chatbot</a>
+            </div>
+            <div class="project-card" data-category="ml">
+                <h3>Crop Recommendation System</h3>
+                <p>AI web app recommending crops based on soil and weather data, built with Python, Flask, and machine learning.</p>
+                <a href="https://crop-recommedation-ol77.onrender.com/" class="project-link" target="_blank">Try App</a>
+            </div>
+            <div class="project-card" data-category="excel">
+                <h3>Ferns and Petals Sales Analysis</h3>
+                <p>Data-driven dashboard analyzing sales trends, customer behavior, and product performance to optimize revenue and delivery efficiency. Built with Python and interactive visualization tools.</p>
+                <a href="https://github.com/rushikeshlokhande1/Ferns-and-Petals-Sales-Analysis" class="project-link" target="_blank">View Analysis</a>
+            </div>
+            <div class="project-card" data-category="powerbi">
+                <h3>Power BI Report</h3>
+                <p>Coming soon, sorry for the delay.</p>
+                <a href="#" class="project-link">Coming Soon</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="certifications" class="certifications">
+    <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="swiper certifications-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="{{ url_for('certificates', filename='MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_RJveMRjTheMvuk56o_1736621393003_completion_certificate.pdf') }}" target="_blank" class="cert-card">
+                        <h4>Data Visualization: Empowering Business with Effective Insights – Forage / Tata</h4>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="{{ url_for('certificates', filename='a87GpgE6tiku7q3gu_4sLyCPgmsy8DA6Dh3_RJveMRjTheMvuk56o_1737910723721_completion_certificate.pdf') }}" target="_blank" class="cert-card">
+                        <h4>Power BI Job Simulation – Forage / PwC</h4>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="{{ url_for('certificates', filename='io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_RJveMRjTheMvuk56o_1739637761768_completion_certificate.pdf') }}" target="_blank" class="cert-card">
+                        <h4>Data Analytics Job Simulation – Deloitte / Forage</h4>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="{{ url_for('certificates', filename='Hack2skill-Certificate_Isro.png') }}" target="_blank" class="cert-card">
+                        <img src="{{ url_for('static', filename='certificates/Hack2skill-Certificate_Isro.png') }}" alt="Certification 10">
+                        <h4>ISRO Bharatiya Antariksh Hackathon 2025 – Hack2Skill</h4>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="{{ url_for('certificates', filename='Hack2skill-Certificate (1).png') }}" target="_blank" class="cert-card">
+                        <img src="{{ url_for('static', filename='certificates/Hack2skill-Certificate (1).png') }}" alt="Certification 11">
+                        <h4>Google Cloud Presents Agentic AI Day 2025 – Hack2Skill</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<section id="resume" class="resume">
+    <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-card">
+            <h3>My Professional Resume</h3>
+            <p>View or download my latest resume to learn more about my experience and skills.</p>
+            <div class="resume-buttons">
+                <a href="{{ url_for('resume') }}" class="btn btn-secondary" target="_blank">View Resume</a>
+                <a href="{{ url_for('resume') }}" class="btn btn-primary" download>Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
