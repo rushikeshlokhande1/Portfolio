@@ -9,7 +9,7 @@ def home():
 
 @app.route('/resume')
 def resume():
-    return send_from_directory('static', 'Rushikesh_lokhande_Final_Resume.pdf')
+    return send_from_directory('static', 'Rushukesh_Lokhande_CV.pdf')
 
 @app.route('/certificates/<filename>')
 def certificates(filename):
@@ -18,6 +18,7 @@ def certificates(filename):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # use PORT from environment
     app.run(host="0.0.0.0", port=port)
+
 
 
 
